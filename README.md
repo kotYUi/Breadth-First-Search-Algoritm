@@ -78,3 +78,11 @@ The queue is empty - we return False (no best friend found)
 
 # Why does BFS work?
 BFS ensures that we first check all the friends of the initial person (level 1), then all their friends (level 2), and so on. This means that we will find the closest (with the least degree of separation) best friend.
+
+# The time complexity of the breadth—first search algorithm (BFS) is O(V + E), where V is the number of vertices and E is the number of edges.  
+
+This estimate is valid for the best, average, and worst cases.  2
+Analysis of working hours:
+Working with a queue. Queued and dequeued operations take O(1) time, so the total time spent working with the queue is O(V) operations. 1
+Working with the ribs. For each vertex, no more than a certain number of incident edges are considered. Since the total number of edges is 2E, the time used to work with the edges is O(E). 1
+Thus, the total running time of the BFS algorithm is O(V + E). 1
